@@ -14,4 +14,13 @@ Notes:
 """
 def mapping(letters):
     # Your code here
+    result = {}
 
+    for a in l:
+        result[a] = a.upper()
+
+    return result
+
+    print(mapping(["p", "s"]))
+    print(mapping(["a", "b", "c"]))
+    print(mapping(["a", "v", "y", "z"]))

@@ -17,4 +17,19 @@ Examples:
 """
 def XO(txt):
     # Your code here
+    num_xs =0
+    num_os = 0
 
+    for letter in txt.lower():
+        if letter == 'x':
+            num_xs += 1
+        if letter == 'o': # you could use a elif - but does not need to be an `elif`
+            num_os +=1
+
+    return num_xs == num_os
+
+print(XO("ooxx"))
+print(XO("xooxx"))
+print(XO("ooxXm"))
+print(XO("zpzpzpp"))
+print(XO("zzoo"))
